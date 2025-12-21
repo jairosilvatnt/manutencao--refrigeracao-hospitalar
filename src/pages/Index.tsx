@@ -9,7 +9,8 @@ import {
   ClipboardCheck,
   Clock,
   CheckCircle2,
-  ShieldAlert,
+  PhoneCall,
+  Award,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
@@ -247,7 +248,7 @@ export default function Index() {
               size="lg"
               className="bg-red-500 hover:bg-red-600 text-white border border-red-400 animate-pulse-slow"
             >
-              <PhoneAlert className="mr-2 h-5 w-5" />
+              <PhoneCall className="mr-2 h-5 w-5" />
               Ligar para Emergência
             </Button>
           </div>

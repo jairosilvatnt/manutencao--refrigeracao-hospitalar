@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, Snowflake, PhoneAlert, Activity } from 'lucide-react'
+import { Menu, Snowflake, PhoneCall, Activity } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
   Sheet,
@@ -68,7 +68,7 @@ export const Header = () => {
             asChild
           >
             <Link to="/agendar">
-              <PhoneAlert className="mr-2 h-4 w-4" />
+              <PhoneCall className="mr-2 h-4 w-4" />
               Emergência 24h
             </Link>
           </Button>
@@ -112,7 +112,7 @@ export const Header = () => {
                   asChild
                 >
                   <Link to="/agendar">
-                    <PhoneAlert className="mr-2 h-4 w-4" />
+                    <PhoneCall className="mr-2 h-4 w-4" />
                     Emergência 24h
                   </Link>
                 </Button>
