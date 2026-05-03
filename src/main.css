@@ -37,8 +37,8 @@
     --accent: 210 40% 96.1%;
     --accent-foreground: 215 28% 17%;
 
-    /* Destructive/Emergency: #ef4444 (Red 500) */
-    --destructive: 0 84% 60%;
+    /* Destructive/Emergency: #b91c1c (Red 700) for WCAG AA contrast with white text */
+    --destructive: 0 74% 42%;
     --destructive-foreground: 0 0% 98%;
 
     /* Border */
@@ -100,10 +100,10 @@
   @keyframes pulse-red {
     0%,
     100% {
-      box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+      box-shadow: 0 0 0 0 rgba(185, 28, 28, 0.7); /* Red 700 */
     }
     70% {
-      box-shadow: 0 0 0 10px rgba(239, 68, 68, 0);
+      box-shadow: 0 0 0 10px rgba(185, 28, 28, 0);
     }
   }
 

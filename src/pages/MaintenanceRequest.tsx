@@ -156,7 +156,7 @@ export default function MaintenanceRequest() {
                         <FormControl>
                           <RadioGroupItem value="high" />
                         </FormControl>
-                        <FormLabel className="font-normal cursor-pointer text-orange-600 font-semibold">
+                        <FormLabel className="font-normal cursor-pointer text-orange-700 font-semibold">
                           Alta (Risco de perda de temperatura)
                         </FormLabel>
                       </FormItem>
@@ -164,10 +164,10 @@ export default function MaintenanceRequest() {
                         <FormControl>
                           <RadioGroupItem
                             value="emergency"
-                            className="text-red-500 border-red-500"
+                            className="text-destructive border-destructive"
                           />
                         </FormControl>
-                        <FormLabel className="font-normal cursor-pointer text-red-600 font-bold flex items-center gap-2">
+                        <FormLabel className="font-normal cursor-pointer text-destructive font-bold flex items-center gap-2">
                           <AlertTriangle className="h-4 w-4" />
                           Emergência (Parada total com material dentro)
                         </FormLabel>
@@ -351,12 +351,12 @@ export default function MaintenanceRequest() {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full md:w-auto"
+                className="w-full md:w-auto font-semibold shadow-md hover:shadow-lg transition-all"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? (
                   <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    <Loader2 className="animate-spin" />
                     Enviando Solicitação...
                   </>
                 ) : (

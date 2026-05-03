@@ -64,11 +64,11 @@ export const Header = () => {
         <div className="hidden md:flex items-center gap-4">
           <Button
             variant="destructive"
-            className="animate-pulse-red font-bold shadow-md"
+            className="animate-pulse-red font-bold shadow-md hover:shadow-lg transition-all"
             asChild
           >
             <Link to="/agendar">
-              <PhoneCall className="mr-2 h-4 w-4" />
+              <PhoneCall />
               Emergência 24h
             </Link>
           </Button>
@@ -77,7 +77,11 @@ export const Header = () => {
         {/* Mobile Menu */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
-            <Button variant="ghost" size="icon">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="hover:bg-slate-100 transition-colors"
+            >
               <Menu className="h-6 w-6 text-slate-700" />
             </Button>
           </SheetTrigger>
@@ -108,11 +112,11 @@ export const Header = () => {
               <SheetClose asChild>
                 <Button
                   variant="destructive"
-                  className="w-full justify-start animate-pulse-red"
+                  className="w-full justify-start animate-pulse-red font-bold transition-all"
                   asChild
                 >
                   <Link to="/agendar">
-                    <PhoneCall className="mr-2 h-4 w-4" />
+                    <PhoneCall />
                     Emergência 24h
                   </Link>
                 </Button>

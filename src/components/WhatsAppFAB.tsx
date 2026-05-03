@@ -8,14 +8,14 @@ export const WhatsAppFAB = () => {
   }
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-8 right-8 z-[100]">
       <Button
         onClick={handleClick}
         size="icon"
-        className="h-14 w-14 rounded-full bg-[#25D366] hover:bg-[#128C7E] shadow-lg transition-transform hover:scale-110 animate-fade-in-up"
+        className="h-14 w-14 rounded-full bg-[#25D366] text-white hover:bg-[#128C7E] shadow-elevation hover:shadow-xl transition-all hover:scale-110 focus-visible:ring-[#25D366] focus-visible:ring-offset-2 animate-fade-in-up group [&_svg]:size-7"
         aria-label="Atendimento via WhatsApp"
       >
-        <MessageCircle className="h-8 w-8 text-white" />
+        <MessageCircle className="text-white group-hover:scale-110 transition-transform" />
       </Button>
     </div>
   )

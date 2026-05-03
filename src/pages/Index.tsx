@@ -55,18 +55,18 @@ export default function Index() {
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Button
                 size="lg"
-                className="h-14 px-8 text-base bg-sky-500 hover:bg-sky-600 text-white border-0 shadow-lg shadow-sky-500/25"
+                className="h-14 px-8 text-base shadow-lg shadow-black/10 font-semibold transition-all hover:-translate-y-0.5"
                 asChild
               >
                 <Link to="/agendar">
                   Solicitar Orçamento
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                  <ArrowRight />
                 </Link>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="h-14 px-8 text-base border-white/30 text-slate-900 hover:bg-white/10 hover:text-white backdrop-blur-sm"
+                className="h-14 px-8 text-base border-white/40 text-white hover:bg-white/20 hover:text-white backdrop-blur-sm transition-all"
                 asChild
               >
                 <Link to="/servicos">Ver Serviços</Link>
@@ -159,12 +159,12 @@ export default function Index() {
             </div>
             <Button
               variant="ghost"
-              className="text-primary hover:text-primary/80"
+              className="text-primary font-semibold hover:bg-primary/10 hover:text-primary transition-colors"
               asChild
             >
               <Link to="/servicos">
-                Ver todos os equipamentos{' '}
-                <ArrowRight className="ml-2 h-4 w-4" />
+                Ver todos os equipamentos
+                <ArrowRight />
               </Link>
             </Button>
           </div>
@@ -239,16 +239,17 @@ export default function Index() {
             <Button
               size="lg"
               variant="secondary"
-              className="font-semibold text-sky-700"
+              className="font-bold text-sky-900 hover:text-sky-950 hover:bg-white shadow-lg transition-all"
               asChild
             >
               <Link to="/agendar">Abrir Chamado Técnico</Link>
             </Button>
             <Button
               size="lg"
-              className="bg-red-500 hover:bg-red-600 text-white border border-red-400 animate-pulse-slow"
+              variant="destructive"
+              className="animate-pulse-red font-bold shadow-lg transition-all"
             >
-              <PhoneCall className="mr-2 h-5 w-5" />
+              <PhoneCall />
               Ligar para Emergência
             </Button>
           </div>
