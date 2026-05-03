@@ -1,6 +1,6 @@
-# Projeto Criado com o Skip
+# Minha pagina na web
 
-Este projeto foi criado de ponta a ponta com o [Skip](https://goskip.dev).
+Este projeto foi criado para mostrar os serviços prestados
 
 ## 🚀 Stack Tecnológica
 
